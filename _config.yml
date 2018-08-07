@@ -7,14 +7,14 @@
 
 # Site settings
 title:  匠心零度
-subtitle: 分享技术
+subtitle: 分享技术，以匠心，铸非凡!
 name: 匠心零度
 encoding: "utf-8"
 favicon: favicon.png 
 
 repository: jiangxinlingdu/jiangxinlingdu.github.io
-github_url: https://github.com/jiangxinlingdu
-cnblog_url: http://www.cnblogs.com/jiangxinlingdu
+github_url: https://github.com/lirenzuo
+cnblog_url: http://www.cnblogs.com/lirenzuo
 url: http://www.jiangxinlingdu.com
 enforce_ssl: jiangxinlingdu.com
 
@@ -59,8 +59,8 @@ navs:
     label: Home
 
   -
-    href: /spring-boot.html
-    label: Spring-Boot
+    href: /rocketmq.html
+    label: RocketMQ
 
   -
     href: /spring-cloud.html
