@@ -11,4 +11,4 @@
 
 ## 我的微信公众号
 
-![](http://www.jiangxinlingdu.com/assets/images/。看gd_430.jpg)
+![](http://www.jiangxinlingdu.com/assets/images/lingdu.jpg)

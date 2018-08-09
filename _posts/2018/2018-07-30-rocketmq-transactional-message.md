@@ -2,7 +2,7 @@
 layout: post
 title: rocketmq4.3事务消息入门介绍
 category: rocketmq
-tags: [rocketmq]
+tags: [RocketMQ]
 excerpt: rocketmq4.3事务消息入门介绍。
 keywords: RocketMQ, 事务
 ---
