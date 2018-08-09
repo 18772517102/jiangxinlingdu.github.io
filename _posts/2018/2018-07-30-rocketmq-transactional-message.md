@@ -8,7 +8,7 @@ keywords: RocketMQ, 事务
 ---
 
 
-### 说明
+## 说明
 
 周五的时候发了篇：[Rocketmq4.3支持事务啦！！！](https://mp.weixin.qq.com/s/6uXgFM5hdL6TuOekMEOnKw)，趁着周末的时候把相关内容看了下，下面的主要内容就是关于RocketMQ事务相关内容介绍了。
 
@@ -17,7 +17,7 @@ keywords: RocketMQ, 事务
 
 
 
-### 主题
+## 主题
 
 - 引出分布式事务相关内容。
 - RocketMQ事务消息。
@@ -30,7 +30,7 @@ keywords: RocketMQ, 事务
 
 
 
-### 引出分布式事务相关内容
+## 引出分布式事务相关内容
 
 这里主要是想说明下，是什么背景下面产生了此类问题。
 
@@ -66,7 +66,7 @@ keywords: RocketMQ, 事务
 
 
 
-###  RocketMQ事务消息
+##  RocketMQ事务消息
 
 这里主要是参考RocketMQ官方文档里面的内容，参考地址：
 
@@ -82,7 +82,7 @@ http://rocketmq.apache.org/rocketmq/the-design-of-transactional-message/
 
 
 
-# 执行流程图
+## 执行流程图
 
 ![截图](https://user-gold-cdn.xitu.io/2018/7/30/164e91cb94fab729?w=864&h=297&f=png&s=50469)
 
@@ -100,9 +100,9 @@ http://rocketmq.apache.org/rocketmq/the-design-of-transactional-message/
 
 
 
-###  RocketMQ事务消息如何使用
+##  RocketMQ事务消息如何使用
 
-#### 1、引入 rocketmq-client
+### 1、引入 rocketmq-client
 
 ![](https://user-gold-cdn.xitu.io/2018/7/29/164e55a6f069873e?w=1344&h=390&f=png&s=30163)
 
@@ -118,7 +118,7 @@ http://rocketmq.apache.org/rocketmq/the-design-of-transactional-message/
 
 
 
-#### 2、编写Producer
+### 2、编写Producer
 
 主要参考RocketMQ4.3.0里面的例子，地址为：
 
@@ -135,7 +135,7 @@ https://github.com/apache/rocketmq/tree/release-4.3.0/example/src/main/java/org/
 
 **思考：假如这个时候我们消费端失败了怎么办呢？（这个问题后续有讨论，消费失败有2种，第一种是超时了，我们重试即可，第二种是真的处理失败了？该怎么办呢？）**
 
-###  RocketMQ事务消息是怎么实现的
+##  RocketMQ事务消息是怎么实现的
 
 第一感觉和定时消息做法非常类似，但是比定时消息要复杂。定时消息内容在：[RocketMQ(九)：消息发送（续）](https://mp.weixin.qq.com/s/UIPgD7EaaiOArwctdVmJAA)里面提到过。
 
@@ -148,13 +148,13 @@ https://github.com/apache/rocketmq/tree/release-4.3.0/example/src/main/java/org/
 
 **思考：**  如果把发送普通消息和本地执行逻辑放在一个事务里面，如果执行事务成功就发送普通消息，如果失败就回滚好像也是可以，那么这种事务消息相对其有什么优势或者好处呢？？？ 思考下。
 
-###  为什么需要事务消息会查机制
+##  为什么需要事务消息会查机制
 
 其实这个内容在，**RocketMQ事务消息**介绍里面也说明了，由于网络闪断、生产者应用重启等原因，导致某条事务消息的二次确认丢失，MQ 服务端通过扫描发现某条消息长期处于“半消息”时，需要主动向消息生产者询问该消息的最终状态（Commit 或是 Rollback），该过程即消息回查。那么RocketMQ到底怎么做的呢？下面马上就会介绍。
 
 
 
-###  RocketMQ是怎么进行事务消息会查的
+##  RocketMQ是怎么进行事务消息会查的
 
 每60s会对**Half(Prepare) Message**的topic主题为**RMQ_SYS_TRANS_HALF_TOPIC**的消息进行check。
 
@@ -170,7 +170,7 @@ https://github.com/apache/rocketmq/tree/release-4.3.0/example/src/main/java/org/
 
 > **备注：** 就是RocketMQ已经实现这个机制，今天这篇仅仅是入门介绍，并没有涉及到很多细节，先把大概流程说明白，后续再具体细节进行开篇说明。
 
-###  RocketMQ对于分布式事务解决还有那些局限性？以及说明
+##  RocketMQ对于分布式事务解决还有那些局限性？以及说明
 
 在RocketMQ事务消息如何使用的时候我们提到，**如果消费失败怎么办？**消费失败有2种，第一种是超时了，我们重试即可，第二种是真的处理失败了？仔细思考下，这块还是蛮复杂的，假如需要有7-8个业务模块呢，其中执行到第6个业务模块就失败呢？ **这种重试好几次还是失败，我们该如何处理呢？？？**是回滚前面5个操作吗？好复杂好复杂，**为什么RocketMQ不提供自动回滚呢？** 希望大家思考下，如果失败率比较大，那么就是系统问题需要优化代码业务……
 
@@ -178,6 +178,6 @@ https://github.com/apache/rocketmq/tree/release-4.3.0/example/src/main/java/org/
 
 
 
-### 结束语
+## 结束语
 
 本人水平有限，难免会有一些理解偏差的地方，如果发现，欢迎各位积极指出，感谢！！！
