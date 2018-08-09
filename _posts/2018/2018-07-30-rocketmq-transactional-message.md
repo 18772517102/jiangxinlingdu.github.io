@@ -181,9 +181,3 @@ https://github.com/apache/rocketmq/tree/release-4.3.0/example/src/main/java/org/
 ### 结束语
 
 本人水平有限，难免会有一些理解偏差的地方，如果发现，欢迎各位积极指出，感谢！！！
-
-------
-
-**如果读完觉得有收获的话，欢迎点赞、关注、加公众号【匠心零度】，查阅更多精彩历史！！！**
-
-![img](https://user-gold-cdn.xitu.io/2018/7/30/164e8fb877f5c347?w=500&h=329&f=gif&s=191315)
