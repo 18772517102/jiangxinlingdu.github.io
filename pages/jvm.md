@@ -1,46 +1,15 @@
 ---
 layout: page
-title: Jvm系列文章
-titlebar: jvm
-subtitle: <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp; jvm系列文章
-menu: jvm
+title: JVM 系列文章
+titlebar: JVM
+subtitle: <span class="mega-octicon octicon-cloud-download"></span>&nbsp;&nbsp;
+     <a href ="https://github.com/lirenzuo/JVM-JVM-all-4.1.0-incubating">更多 JVM 精选课程 ， <font color="#EB9439">点我</font>查看！</a><br/>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <a href ="http://www.jiangxinlingdu.com/assets/images/lingdu.jpg">关注公众号：<font color="#00FF00">匠心零度</font>，进群交流。</a>
+menu: JVM
 css: ['blog-page.css']
-permalink: /jvm
+permalink: /JVM
+keywords: JVM 教程,JVM 示例,JVM 学习,JVM 资源,JVM 源码分析,JVM 常见问题
 ---
 
-<div class="row">
-
-    <div class="col-md-12">
-
-        <ul id="posts-list">
-            {% for post in site.posts %}
-                {% if post.category=='jvm' %}
-                <li class="posts-list-item">
-                    <div class="posts-content">
-                        <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
-                        <a class="posts-list-name bubble-float-left" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-                        <span class='circle'></span>
-                    </div>
-                </li>
-                {% endif %}
-            {% endfor %}
-        </ul> 
-
-        <!-- Pagination -->
-        {% include pagination.html %}
-
-        <!-- Comments -->
-       <div class="comment">
-         {% include comments.html %}
-       </div>
-    </div>
-
-</div>
-<script>
-    $(document).ready(function(){
-
-        // Enable bootstrap tooltip
-        $("body").tooltip({ selector: '[data-toggle=tooltip]' });
-
-    });
-</script>
+{% include jvm.html %}

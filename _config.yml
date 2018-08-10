@@ -63,8 +63,8 @@ navs:
     label: RocketMQ
 
   -
-    href: /spring-cloud.html
-    label: Spring-Cloud
+    href: /jvm.html
+    label: JVM
 
   -
     href: /archives.html
