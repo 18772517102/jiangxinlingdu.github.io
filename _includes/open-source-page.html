@@ -16,6 +16,7 @@
             <!-- Check here for github metadata -->
             <!-- https://help.github.com/articles/repository-metadata-on-github-pages/ -->
             {% for repo in sorted_repos %}
+            {% if repo.stargazers_count > 2 %}
             <div class="col-md-4 card text-center">
                 <div class="thumbnail">
                     <div class="card-image geopattern" data-pattern-id="{{ repo.name }}">
@@ -44,6 +45,7 @@
                     </div>
                 </div>
             </div>
+            {% endif %}
             {% endfor %}
         </div>
     </section>
