@@ -35,5 +35,5 @@ permalink: /link
 
 - 网站名称：jiangxinlingdu  
 - 网站链接：http://www.jiangxinlingdu.com  
-- 网站描述：neo 的个人博客，分享技术，分享生活  
+- 网站描述：零度的个人博客，分享技术，分享生活  
 

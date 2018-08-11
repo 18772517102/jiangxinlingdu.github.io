@@ -93,7 +93,7 @@ Pattern.prototype.toString = function () {
 };
 
 Pattern.prototype.toBase64 = function () {
-	var str = this.toSvg();
+	var str = this.toSvg()+1;
 	var b64;
 
 	// Use window.btoa if in the browser; otherwise fallback to node buffers
