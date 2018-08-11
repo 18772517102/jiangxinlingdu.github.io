@@ -18,7 +18,8 @@ keywords: JVM, GC
 ```
 可以通过ulimit –a查看参数设置，不设置时默认为1024，默认情况下，你会发现请求数到到一定数值后，再也上不去了。
 2. **操作系统内核优化**
->net.ipv4.tcp_max_tw_buckets = 6000
+```
+net.ipv4.tcp_max_tw_buckets = 6000
 timewait 的数量，默认是180000。
 net.ipv4.ip_local_port_range = 1024 65000
 允许系统打开的端口范围。
@@ -47,7 +48,7 @@ net.ipv4.tcp_fin_timeout = 1
 net.ipv4.tcp_keepalive_time = 30
 当keepalive 起用的时候，TCP发送keepalive消息的频度。缺省是2小时。
 内核参数优化设置在/etc/sysctl.conf文件中。
-
+```
 上面2个都调整一样的情况下，开始准备测试*tomcat7*（*jdk7*）与*tomcat8*（*jdk8*）的一些性能测试了。
 由于各各原因复杂服务没法测试，先仅仅是测试静态页面。
 
