@@ -53,6 +53,8 @@ jstat -gcutil pid  3s 30
 后来又看见![](http://upload-images.jianshu.io/upload_images/7849276-a0502f3f1b5f0867?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)以为这个包问题，又是一波修改，发现还是一小时执行一次通过日志观察，此时我已经无语了，不过还好在我的坚持下，还是把问题找到了，由于我把项目去掉跑不会有，那么感觉和项目有关，但是代码里面的确没有调用，我怀疑是否是其他jar里面的问题呢？我把所有的jar都查了一遍，的确发现问题了。![](http://upload-images.jianshu.io/upload_images/7849276-2e8d1ee8d82ee76e?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)查看该jar![](http://upload-images.jianshu.io/upload_images/7849276-e0a07b20771d8bcc?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)由于包的确有点老了，里面的确是这样，和上面的tomcat那个bug很像，我下载了一个新版本查看，发现的确优化了。![](http://upload-images.jianshu.io/upload_images/7849276-f4b4820d93363d1b?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)新版本里面变成了10个小时一次了，而且可以通过jvm参数让其进行关闭，
 **-Dorg.apache.cxf.JDKBugHacks.gcRequestLatency=true**即可。这次的这个一小时问题排除就结束了，还需要修改代码，后续继续观察，在此过程中，ak大神和阿飞都告诉我关于ygc时间问题，的确这个还一直在实验，希望优化的更好，内容很多一直也在学习，定位问题就是需要大胆的猜之后试之后优化修改记录。后续会分享关于ygc时间长问题，推荐一款在线分析gc的好工具析，http://gceasy.io。  非常棒，在此再次感谢笨神，阿飞哥，ak大神的指导。
 
+------------------
+
 本人其他JVM菜鸟进阶高手之路相关文章或者其他系列文章可以关注公众号【匠心零度】获取更多！！！
 
 **如果读完觉得有收获的话，欢迎点赞、关注、加公众号【匠心零度】。**
