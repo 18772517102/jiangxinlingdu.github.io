@@ -7,7 +7,7 @@ excerpt: JVM菜鸟进阶高手之路六（JVM每隔一小时执行一次Full GC�
 keywords: JVM, GC
 ---
 
-上次分析详细地址在：http://www.cnblogs.com/lirenzuo/p/7531700.html
+上次分析详细地址在：[http://www.jiangxinlingdu.com/jvm/2017/07/28/jvm-rmi.html](http://www.jiangxinlingdu.com/jvm/2017/07/28/jvm-rmi.html)
 以为上次问题是rmi的问题就此结束了，但是问题并没有结束，其实本次问题不是rmi问题导致的，但是rmi也的确可能会有sys.gc fullgc问题。
 查看GC统计汇总情况：
 ``` java 
