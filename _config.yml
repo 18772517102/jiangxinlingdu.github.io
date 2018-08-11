@@ -48,7 +48,7 @@ syntax_highlighter_opts:
    coderay_line_numbers:  nil
 
 # Pagination
-paginate: 10
+paginate: 8
 paginate_path: 'page:num'
 
 # Navigation. If you do not like these modules, just remove them :D
