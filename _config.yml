@@ -90,6 +90,15 @@ labels:
   -
     href: /practice.html
     name: 实践
+  -
+    href: /linux.html
+    name: Linux
+  -
+    href: /redis.html
+    name: redis
+  -
+    href: /open-source.html
+    name: Code
 #  -
 #    href: /share/2017/10/01/resource-sharing.html
 #    name: 资源
