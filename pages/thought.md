@@ -1,11 +1,11 @@
 ---
 layout: page
-title: 你的生活和我一样吗
-titlebar: life
-subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; 你的生活有什么故事？
-menu: life
+title: 思考思考再思考
+titlebar: thought
+subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; 一起思考。
+menu: thought
 css: ['blog-page.css']
-permalink: /life
+permalink: /thought
 ---
 
 <div class="row">

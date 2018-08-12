@@ -1,11 +1,11 @@
 ---
 layout: page
-title: 架构师的自我修养
-titlebar: arch
-subtitle: <span class="mega-octicon octicon-keyboard"></span>&nbsp;&nbsp; 其实我是一名程序员。
-menu: arch
+title: 面试系列文章
+titlebar: interview
+subtitle: <span class="mega-octicon octicon-keyboard"></span>&nbsp;&nbsp; 查缺补漏。
+menu: interview
 css: ['blog-page.css']
-permalink: /arch
+permalink: /interview
 ---
 
 <div class="row">

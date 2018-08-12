@@ -118,19 +118,19 @@ labels:
 classes:
 
   -
-    href: /life.html
-    name: 我的故事
-    describe: 生活就是故事，故事就是生活
+    href: /thought.html
+    name: 技术思考
+    describe: 学而不思则罔，思而不学则殆
 
   -
-    href: /arch.html
-    name: 架构师之路
-    describe: 一个架构师的自我修养
+    href: /interview.html
+    name: 面试系列文章
+    describe: 收集整理面试，查缺补漏
 
   -
-    href: /jvm.html
-    name: Jvm系列文章
-    describe: Java之根基，Java程序员必学
+    href: /practice.html
+    name: 实践系列文章
+    describe: 实践是检验真理的唯一标准，实践是认识的最终目的
 
 
 # ---------------- #
