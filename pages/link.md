@@ -10,6 +10,8 @@ permalink: /link
 
 ## 友情链接
    
+- [纯洁的微笑](http://ityouknow.com/) - 分享技术，品味人生
+- [芋道源码](http://www.iocoder.cn/) -  纯源码解析博客
 - [梁桂钊的博客](http://blog.720ui.com/) - 后端攻城狮
 - [cmsblogs](http://cmsblogs.com/) - chenssy记录、分享JAVA技术
 
