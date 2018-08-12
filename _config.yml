@@ -82,6 +82,10 @@ navs:
 # labels. my blog key words
 labels:
   -
+    href: /concurrent.html
+    name: 高并发、锁
+
+  -
     href: /thought.html
     name: 思考
 
@@ -92,10 +96,6 @@ labels:
   -
     href: /practice.html
     name: 实践
-
-  -
-    href: /concurrent.html
-    name: 高并发、锁
 
   -
     href: /linux.html
