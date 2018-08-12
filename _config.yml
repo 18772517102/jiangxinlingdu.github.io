@@ -80,8 +80,16 @@ navs:
 
 
 # labels. my blog key words
-#labels:
-
+labels:
+  -
+    href: /thought.html
+    name: 思考
+  -
+    href: /interview.html
+    name: 面试
+  -
+    href: /practice.html
+    name: 实践
 #  -
 #    href: /share/2017/10/01/resource-sharing.html
 #    name: 资源
