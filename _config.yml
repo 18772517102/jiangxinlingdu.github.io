@@ -84,18 +84,27 @@ labels:
   -
     href: /thought.html
     name: 思考
+
   -
     href: /interview.html
     name: 面试
+
   -
     href: /practice.html
     name: 实践
+
+  -
+    href: /concurrent.html
+    name: 高并发、锁
+
   -
     href: /linux.html
     name: Linux
+
   -
     href: /redis.html
-    name: redis
+    name: Redis
+
   -
     href: /open-source.html
     name: Code
