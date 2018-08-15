@@ -26,7 +26,7 @@ permalink: /link
 
 - <a href="http://www.jiangxinlingdu.com/" target="_blank">jiangxinlingdu</a> - 个人独立博客
 - <a href="https://github.com/jiangxinlingdu" target="_blank">github</a> -  个人github
-- <a href="https://www.cnblogs.com/lirenzuo/" target="_blank">博客园</a> - 个人博客园
+- <a href="https://www.cnblogs.com/jiangxinlingdu/" target="_blank">博客园</a> - 个人博客园
 - <a href="http://blog.csdn.net/lirenzuo" target="_blank">CSDN</a>  - 个人CSDN
 - <a href="https://www.jianshu.com/u/c92ff9cdc2c0" target="_blank">简书</a> - 个人简书
 
