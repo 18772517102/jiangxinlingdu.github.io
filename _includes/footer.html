@@ -12,6 +12,14 @@
                 Github
             </a>
         </div>
+        <div class="site-footer-icons">
+        <span id="busuanzi_container_site_uv">
+          总访客数<span id="busuanzi_value_site_uv"></span>次 &&
+        </span>
+        <span id="busuanzi_container_site_pv">
+            总访问量<span id="busuanzi_value_site_pv"></span>次
+        </span>
+    </div>
         <div class="site-footer-links mobile-hidden">
             {% for nav in site.labels %}
             <a href="{{ nav.href }}" title="{{ nav.name }}" target="{{ nav.target | default: _self }}">{{ nav.name }}</a>
