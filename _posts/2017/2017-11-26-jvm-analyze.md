@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: post 
+author:零度
 title: JVM菜鸟进阶高手之路十四：分析篇
 category: jvm
 tags: [JVM]
