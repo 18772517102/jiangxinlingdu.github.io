@@ -1,6 +1,6 @@
 ---
 layout: post 
-author:零度
+author: 零度
 title: JVM菜鸟进阶高手之路六（JVM每隔一小时执行一次Full GC）
 category: jvm
 tags: [JVM]

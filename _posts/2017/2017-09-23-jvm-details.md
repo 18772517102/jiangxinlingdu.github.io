@@ -1,6 +1,6 @@
 ---
 layout: post 
-author:零度
+author: 零度
 title: JVM菜鸟进阶高手之路八（一些细节）
 category: jvm
 tags: [JVM]
